@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: #1c2028;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.form{
+  background-color: #2f3542;
+  color: #fff;
+  width: 500px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0.8rem 1rem; 
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.2rem; 
+  background-color:#595d68;
+  color: #fafafa; 
+  border-radius: .5rem;
+}
+
+input::placeholder{
+  color: #82868e;
+}
+
+img{
+  height: 350px;
+}
+
+.download-btn { 
+  background-color: #0aa922;
+  padding: 1rem; 
+  outline: none;
+  border: none;
+  color: #fafafa;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.loading {
+  width: 80%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loading span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #fff;
+  border-bottom: 0; 
+  border-radius: 50%;
+  animation: isLoading 1s linear infinite;
+}
+
+@keyframes _loading {
+  0%{
+    transform : rotate(360deg);
+  }
+}
